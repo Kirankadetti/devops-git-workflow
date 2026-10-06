@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevFlow | DevOps Git Workflow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-mark">D</div>
+
+            <div>
+                <h1>DevFlow</h1>
+                <p>Version-Controlled DevOps Dashboard</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            Repository Healthy
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    GIT WORKFLOW • RELEASE MANAGEMENT
+                </span>
+
+                <h2>
+                    Build.
+                    <span>Review.</span>
+                    Release.
+                </h2>
+
+                <p>
+                    A practical demonstration of professional Git branching,
+                    collaboration, pull requests and versioned releases.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#workflow" class="primary-btn">
+                        Explore Workflow
+                    </a>
+
+                    <a href="#practices" class="secondary-btn">
+                        Git Practices
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="release-card">
+
+                <div class="release-header">
+                    <span>Latest Release</span>
+                    <span class="live-badge">STABLE</span>
+                </div>
+
+                <div class="version">
+                    v1.0.0
+                </div>
+
+                <p>
+                    Production release
+                </p>
+
+                <div class="release-meta">
+                    <div>
+                        <span>Branch</span>
+                        <strong>main</strong>
+                    </div>
+
+                    <div>
+                        <span>Workflow</span>
+                        <strong>Git Flow</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section" id="workflow">
+
+            <div class="section-heading">
+                <span class="eyebrow">COLLABORATION MODEL</span>
+
+                <h3>
+                    Git Workflow
+                </h3>
+
+                <p>
+                    Changes move through controlled development,
+                    integration and production branches.
+                </p>
+            </div>
+
+
+            <div class="workflow">
+
+                <div class="workflow-card feature">
+                    <span class="step">01</span>
+
+                    <div class="icon">⌘</div>
+
+                    <h4>Feature</h4>
+
+                    <p>
+                        Developers work independently without
+                        directly affecting production code.
+                    </p>
+
+                    <code>feature/*</code>
+                </div>
+
+
+                <div class="connector">
+                    →
+                </div>
+
+
+                <div class="workflow-card dev">
+                    <span class="step">02</span>
+
+                    <div class="icon">⇄</div>
+
+                    <h4>Development</h4>
+
+                    <p>
+                        Pull requests integrate completed features
+                        into the shared development branch.
+                    </p>
+
+                    <code>dev</code>
+                </div>
+
+
+                <div class="connector">
+                    →
+                </div>
+
+
+                <div class="workflow-card production">
+                    <span class="step">03</span>
+
+                    <div class="icon">✓</div>
+
+                    <h4>Production</h4>
+
+                    <p>
+                        Reviewed and stable changes are promoted
+                        to the production branch.
+                    </p>
+
+                    <code>main</code>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section" id="practices">
+
+            <div class="section-heading">
+                <span class="eyebrow">ENGINEERING PRACTICES</span>
+
+                <h3>
+                    Repository Standards
+                </h3>
+            </div>
+
+
+            <div class="practice-grid">
+
+                <article class="practice-card">
+                    <span class="practice-number">01</span>
+                    <h4>Feature Branching</h4>
+                    <p>
+                        Isolate development work before integrating
+                        changes into shared branches.
+                    </p>
+                </article>
+
+
+                <article class="practice-card">
+                    <span class="practice-number">02</span>
+                    <h4>Pull Requests</h4>
+                    <p>
+                        Review changes before they enter development
+                        or production branches.
+                    </p>
+                </article>
+
+
+                <article class="practice-card">
+                    <span class="practice-number">03</span>
+                    <h4>Meaningful Commits</h4>
+                    <p>
+                        Keep commit history readable with focused,
+                        descriptive changes.
+                    </p>
+                </article>
+
+
+                <article class="practice-card">
+                    <span class="practice-number">04</span>
+                    <h4>Version Tags</h4>
+                    <p>
+                        Mark production milestones with semantic
+                        release versions.
+                    </p>
+                </article>
+
+
+                <article class="practice-card">
+                    <span class="practice-number">05</span>
+                    <h4>Documentation</h4>
+                    <p>
+                        Record workflows, branching strategy and
+                        release procedures using Markdown.
+                    </p>
+                </article>
+
+
+                <article class="practice-card">
+                    <span class="practice-number">06</span>
+                    <h4>Clean Repository</h4>
+                    <p>
+                        Exclude generated files, secrets and local
+                        development artifacts with .gitignore.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="section release-section">
+
+            <div class="release-flow">
+
+                <div>
+                    <span class="eyebrow">RELEASE PIPELINE</span>
+
+                    <h3>
+                        From feature to production.
+                    </h3>
+
+                    <p>
+                        Every release follows a controlled path
+                        from development to a tagged production version.
+                    </p>
+                </div>
+
+
+                <div class="release-steps">
+
+                    <div>
+                        <span>01</span>
+                        Feature
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        Pull Request
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        Dev
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        Release PR
+                    </div>
+
+                    <div>
+                        <span>05</span>
+                        Main
+                    </div>
+
+                    <div>
+                        <span>06</span>
+                        v1.0.0
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+            <strong>DevFlow</strong>
+            <span>Version-Controlled DevOps Project</span>
+        </div>
+
+        <span>
+            Git • GitHub • Branching • Pull Requests • Releases
+        </span>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
